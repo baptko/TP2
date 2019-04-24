@@ -1,3 +1,6 @@
+* {
+    font-family: arial;
+}
 #container
 {
 	margin: 0 30px;
@@ -6,8 +9,11 @@
 
 #header
 {
-	background: #ccc;
+	background: RGBA(200,200,200,0.5);
 	padding: 20px;
+	border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #header h1 { margin: 0; }
@@ -45,6 +51,7 @@
 
 #edito
 {
+    text-align: center;
 	clear: left;
 	padding: 20px;
 	margin: 20px;
@@ -70,7 +77,7 @@
 #news
 {	
 	float: left;
-	width: 40%;
+	width: 60%;
 	padding: 20px;
 	margin: 20px;
 	-webkit-border-radius: 18px;
@@ -84,6 +91,10 @@
 	background-clip: padding-box;
 	opacity: 0.83;
 }
+#news:nth-child(even) {
+    float: right;
+    text-align: right;
+}
 
 #footer
 {
@@ -92,4 +103,6 @@
 	text-align: right;
 	padding: 20px;
 	height: 1%;
+    text-align: center;
+    border-radius: 20px;
 }
